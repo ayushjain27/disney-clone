@@ -60,8 +60,8 @@ const CTA = styled.div`
 
 
 const CTAlogoOne = styled.img`
-margin-bottom: 12px;
-max-width: 600px;
+  margin-bottom: 12px;
+  max-width: 600px;
   min-height: 1px;
   display: block;
   width: 100%;
