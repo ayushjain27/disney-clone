@@ -15,9 +15,9 @@ const Header = (props) => {
     auth.onAuthStateChanged(async (user) => {
       if (user) {
         setUser(user);
-        navigate.push("/home");
+        navigate("/home");
       }
-    });
+    });  
   }, [userName]);
 
   const handleAuth = () => {
@@ -26,7 +26,7 @@ const Header = (props) => {
         .signInWithPopup(provider)
         .then((result) => {
           setUser(result.user);
-          console.log(result);
+          // console.log(result);
         })
         .catch((error) => {
           alert(error.message);
@@ -36,7 +36,7 @@ const Header = (props) => {
         .signOut()
         .then(() => {
           dispatch(setSignOutState());
-          navigate.push("/");
+          navigate("/");
         })
         .catch((err) => alert(err.message));
     }
