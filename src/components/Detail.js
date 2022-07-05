@@ -4,11 +4,11 @@ const Detail = () => {
     return (
         <Container>
             <Background>
-                <img src="" alt="Error" />
+                <img src="" alt="" />
             </Background>
 
             <ImageTitle>
-                <img src="" alt="Error" />
+                <img src="" alt="" />
             </ImageTitle>
         </Container>
     )
